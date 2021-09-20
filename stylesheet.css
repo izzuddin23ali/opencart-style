@@ -227,7 +227,7 @@ div.required .control-label:before {
   border: 1px solid #e6e6e6;
   color: #666;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   text-shadow: none;
 }
 
@@ -505,10 +505,8 @@ footer h5 {
   font-size: 12px;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
-    0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
-    0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .btn-xs {
@@ -546,13 +544,7 @@ footer h5 {
   color: #777;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #e7e7e7;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#eeeeee),
-    to(#dddddd)
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
   background-image: linear-gradient(to bottom, #eeeeee, #dddddd);
   background-repeat: repeat-x;
   border-color: #dddddd #dddddd #b3b3b3 #b7b7b7;
@@ -575,13 +567,7 @@ footer h5 {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #faa732;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#fbb450),
-    to(#f89406)
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbb450), to(#f89406));
   background-image: linear-gradient(to bottom, #fbb450, #f89406);
   background-repeat: repeat-x;
   border-color: #f89406 #f89406 #ad6704;
@@ -593,7 +579,7 @@ footer h5 {
 .btn-warning.disabled,
 .btn-warning[disabled] {
   -webkit-box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-danger {
@@ -606,7 +592,7 @@ footer h5 {
 .btn-danger.disabled,
 .btn-danger[disabled] {
   -webkit-box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-success {
@@ -619,20 +605,14 @@ footer h5 {
 .btn-success.disabled,
 .btn-success[disabled] {
   -webkit-box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-info {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #df5c39;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#e06342),
-    to(#dc512c)
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e06342), to(#dc512c));
   background-image: linear-gradient(to bottom, #e06342, #dc512c);
   background-repeat: repeat-x;
   border-color: #dc512c #dc512c #a2371a;
@@ -660,20 +640,14 @@ footer h5 {
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 .btn-inverse {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #363636;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#444444),
-    to(#222222)
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#222222));
   background-image: linear-gradient(to bottom, #444444, #222222);
   background-repeat: repeat-x;
   border-color: #222222 #222222 #000000;
@@ -685,13 +659,7 @@ footer h5 {
 .btn-inverse.disabled,
 .btn-inverse[disabled] {
   background-color: #222222;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#333333),
-    to(#111111)
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#111111));
   background-image: linear-gradient(to bottom, #333333, #111111);
 }
 
@@ -858,12 +826,10 @@ h2.price {
 }
 
 .product-thumb .button-group button {
-  /*
-	width: 60%;
-	*/
   width: 80%;
   border: none;
   display: inline-block;
+  float: left;
   background-color: #ffa630;
   color: black;
   line-height: 38px;
@@ -873,8 +839,8 @@ h2.price {
 }
 
 .product-thumb .button-group button + button {
-  width: 20%;
-  border-left: 1px solid white;
+  width: 19%;
+  float: right;
 }
 
 .product-thumb .button-group button:hover {
@@ -1140,7 +1106,7 @@ label .input-group-addon {
   border-bottom-left-radius: 5px !important;
   background-color: white;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   margin-left: 0 !important;
 }
 
@@ -1184,8 +1150,8 @@ label .input-group-addon {
   height: 200px;
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .connects {
@@ -1292,7 +1258,7 @@ input[type="radio"] {
 /* BOOTSTRAP 4 */
 .justify-content-around {
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1300,8 +1266,8 @@ input[type="radio"] {
 
 .justify-content-between {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1309,8 +1275,8 @@ input[type="radio"] {
 
 .justify-content-end {
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
